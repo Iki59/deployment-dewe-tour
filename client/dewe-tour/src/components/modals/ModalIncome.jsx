@@ -6,6 +6,10 @@ import Brand2 from "/assets/brand2.svg"
 
 
 function ModalIncome(props) {
+    const formatIDR = (number) => {
+        return "IDR. " + new Intl.NumberFormat("id-ID").format(number);
+      }
+    
     let { data: transaction } = useQuery(["transactionCache", props.id], async () => {
         const response = await API.get(`/transaction/${props?.id}`);
         console.log("ini modal detail", response)
