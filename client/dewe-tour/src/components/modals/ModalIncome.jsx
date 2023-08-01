@@ -1,5 +1,6 @@
 import { useQuery } from "react-query";
 import { API } from "../../config/Api";
+import QRCode from "react-qr-code"
 import {Container, Row, Col, Image, Modal} from "react-bootstrap"
 import Brand2 from "/assets/brand2.svg"
 
