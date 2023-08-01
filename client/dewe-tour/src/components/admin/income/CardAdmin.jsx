@@ -1,5 +1,4 @@
 import {Col, Card, Row} from "react-bootstrap"
-import CountryImg from "/assets/image/country.png"
 
 function CardAdmin({data}) {
     const formatIDR = (number) => {
@@ -9,7 +8,7 @@ function CardAdmin({data}) {
         <>
         <Col md="4" className="mb-5">
             <Card style={{width: "20rem", height: "20rem", padding: "9px"}}>
-                <Card.Img src={CountryImg} />
+                <Card.Img src={data.image} />
                 <p style={{fontSize:"20px", marginTop: "5px"}}>{data.title}</p>
                 <Row>
                     <Col>

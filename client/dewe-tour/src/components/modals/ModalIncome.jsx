@@ -29,7 +29,12 @@ function ModalIncome(props) {
                     <Col md="4">
                      <h5 style={{fontWeight: "700"}}>6{transaction?.trip.title}</h5>
                      <p style={{fontSize: "14px", color: "#959595", marginBottom: "30px"}}>{transaction?.trip.country.name}</p>
+                     {transaction?.status === "Approved" && (
+                     <p className="text-success" style={{fontSize: "12px", fontWeight: "500"}}>{transaction?.status}</p>
+                     )}
+                     {transaction?.status === "Waiting Payment" && (
                      <p style={{fontSize: "12px", color: "#EC7A7A", fontWeight: "500"}}>{transaction?.status}</p>
+                     )}
                     </Col>
                     <Col md="2">
                         <div className="mb-4">
@@ -52,7 +57,18 @@ function ModalIncome(props) {
                         </div>
                     </Col>
                     <Col md="4">
-                    
+                    <div className="d-flex justify-content-end">
+                        <QRCode 
+                            style={{width: "9rem", height: "9rem", marginRight: "2rem"}}
+                            value={`Tittle: ${transaction?.trip.title}
+                            \n Date: ${transaction?.trip.date_trip}
+                            \n Duration: ${transaction?.trip.day} Day ${transaction?.trip.day} Night
+                            \n Accomodation: ${transaction?.trip.accomodation}
+                            \n Transportation: ${transaction?.trip.transportation}
+                            \n Quantity: ${transaction?.quantity}
+                            \n Price: ${formatIDR(transaction?.total)}`}
+                            />
+                    </div>
                     </Col>
                 </Row>
             </div>
