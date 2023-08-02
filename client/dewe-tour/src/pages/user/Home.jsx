@@ -32,7 +32,7 @@ function Home() {
         : setSearch(true)
     }
     return(
-        <div style={{backgroundImage: `url(${Beach})`, height:"85vh", backgroundRepeat: "no-repeat"}}>
+        <div style={{backgroundImage: `url(${Beach})`, height:"85vh", backgroundRepeat: "no-repeat", background: "cover", objectFit: "cover"}}>
         <Header />
         <Container className="mt-5 p-4">
             <h2 className="text-white mb-0" style={{fontFamily:"product-sans", fontSize:"54px", fontWeight:"500"}}>Explore</h2>
