@@ -62,6 +62,7 @@ function ModalIncome(props) {
                         </div>
                     </Col>
                     <Col md="4">
+                    {transaction?.status === "Approved" && (
                     <div className="d-flex justify-content-end">
                         <QRCode 
                             style={{width: "9rem", height: "9rem", marginRight: "2rem"}}
@@ -74,6 +75,7 @@ function ModalIncome(props) {
                             \n Price: ${formatIDR(transaction?.total)}`}
                             />
                     </div>
+                    )}
                     </Col>
                 </Row>
             </div>
