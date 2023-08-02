@@ -8,7 +8,7 @@ function CardAdmin({data}) {
         <>
         <Col md="4" className="mb-5">
             <Card style={{width: "20rem", height: "20rem", padding: "9px"}}>
-                <Card.Img src={data.image} />
+                <Card.Img src={data.image} style={{width: "100%", height: "100%", objectFit: "cover"}} />
                 <p style={{fontSize:"20px", marginTop: "5px"}}>{data.title}</p>
                 <Row>
                     <Col>
