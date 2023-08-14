@@ -5,10 +5,9 @@ import {Link, useParams, useNavigate} from "react-router-dom"
 import {UserContext} from "../../../context/UserContext"
 import {Container, Image, Row, Col, Button} from "react-bootstrap"
 import ModalLogin from "../../modals/ModalLogin"
-import Australia from "/assets/image/Australiaa.jpg"
-import Australia2 from "/assets/image/Australia2.png"
-import Australia3 from "/assets/image/Australia3.png"
-import Australia4 from "/assets/image/Australia4.png"
+import Labuan from "/assets/image/labuan-bajo-2.jpeg"
+import Labuan2 from "/assets/image/labuan-bajo-3.jpeg"
+import Labuan3 from "/assets/image/labuan-bajo-4.jpeg"
 import Hotel from "/assets/hotel.svg"
 import Plane from "/assets/plane.svg"
 import Meal from "/assets/meal.svg"
@@ -79,13 +78,13 @@ function ContentDetail() {
                     <Image src={detailTrip?.image} style={{width: "100%", height: "500px"}} />
                     <Row className="mt-3 mb-5">
                         <Col>
-                            <Image src={detailTrip?.image} style={{width: "100%"}} />
+                            <Image src={Labuan} style={{width: "100%"}} />
                         </Col>
                         <Col>
-                            <Image src={detailTrip?.image} style={{width: "100%"}} />
+                            <Image src={Labuan2} style={{width: "100%"}} />
                         </Col>
                         <Col>
-                            <Image src={detailTrip?.image} style={{width: "100%"}} />
+                            <Image src={Labuan3} style={{width: "100%"}} />
                         </Col>
                     </Row>
                 </div>
