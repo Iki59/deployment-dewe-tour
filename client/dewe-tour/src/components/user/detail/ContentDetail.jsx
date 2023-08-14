@@ -78,13 +78,13 @@ function ContentDetail() {
                     <Image src={detailTrip?.image} style={{width: "100%", height: "500px"}} />
                     <Row className="mt-3 mb-5">
                         <Col>
-                            <Image src={Labuan} style={{width: "100%", height: "50%"}} />
+                            <Image src={Labuan} style={{width: "100%", height: "60%"}} />
                         </Col>
                         <Col>
-                            <Image src={Labuan2} style={{width: "100%", height: "50%"}} />
+                            <Image src={Labuan2} style={{width: "100%", height: "60%"}} />
                         </Col>
                         <Col>
-                            <Image src={Labuan3} style={{width: "100%", height: "50%"}} />
+                            <Image src={Labuan3} style={{width: "100%", height: "60%"}} />
                         </Col>
                     </Row>
                 </div>
