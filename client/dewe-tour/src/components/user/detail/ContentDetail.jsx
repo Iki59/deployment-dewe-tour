@@ -76,14 +76,14 @@ function ContentDetail() {
                 <p style={style.fontCountry}>{detailTrip?.country.name}</p>
                 <div>
                     <Image src={detailTrip?.image} style={{width: "100%", height: "500px"}} />
-                    <Row className="mt-3 mb-5 h-25">
-                        <Col>
+                    <Row className="mt-3 mb-5">
+                        <Col className="h-50">
                             <Image src={Labuan} style={{width: "100%"}} />
                         </Col>
-                        <Col>
+                        <Col className="h-50">
                             <Image src={Labuan2} style={{width: "100%"}} />
                         </Col>
-                        <Col>
+                        <Col className="h-50">
                             <Image src={Labuan3} style={{width: "100%"}} />
                         </Col>
                     </Row>
